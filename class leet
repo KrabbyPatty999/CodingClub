@@ -1,0 +1,103 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMFv6eCMPIMTHMv40YXeMXk",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KrabbyPatty999/CodingClub/blob/main/class%20leet\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XbFmjKgxo3E3",
+        "outputId": "d79f0c84-b821-4256-8091-cdfb1c16b623"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the sentence:Emily taught us about Classes. 1) Review: Defining and calling functions and 2) ​Changing attributes after defining classes.\n",
+            "3m1ly t4u9ht u5 480ut Cl45535. 1) R3v13w: D371n1n9 4nd c4ll1n9 7unct10n5 4nd 2) ​Ch4n91n9 4ttr18ut35 47t3r d371n1n9 cl45535.\n"
+          ]
+        }
+      ],
+      "source": [
+        "englishtoleet= {\"a\":\"4\", \"b\":\"8\", \"e\":\"3\",\"f\":\"7\", \"g\":\"9\", \"i\":\"1\", \"o\":\"0\",\"s\":\"5\"}\n",
+        "inputVal=input(\"Enter the sentence:\")\n",
+        "leetstring=''\n",
+        "for x in inputVal:\n",
+        "  strLowerCase = x.lower()\n",
+        "  if strLowerCase in englishtoleet:\n",
+        "    leetstring += englishtoleet[strLowerCase]\n",
+        "  else:\n",
+        "    leetstring=leetstring+x\n",
+        "print(leetstring)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Leet:\n",
+        "  def __init__(self, sentence):\n",
+        "    self.englishtoleet={\"a\":\"4\", \"b\":\"8\", \"e\":\"3\",\"f\":\"7\", \"g\":\"9\", \"i\":\"1\", \"o\":\"0\",\"s\":\"5\"}\n",
+        "    self.sentence = sentence\n",
+        "  def leet(self):\n",
+        "    leetstring=''\n",
+        "    for x in self.sentence:\n",
+        "      strLowerCase = x.lower()\n",
+        "      if strLowerCase in englishtoleet:\n",
+        "        leetstring += englishtoleet[strLowerCase]\n",
+        "      else:\n",
+        "        leetstring=leetstring+x\n",
+        "    print(leetstring)\n",
+        "\n",
+        "inputVal=input(\"Enter the sentence:\")\n",
+        "leetObject=Leet(inputVal)\n",
+        "leetObject.leet()\n"
+      ],
+      "metadata": {
+        "id": "cQ_6zVUrr6GH",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "88bf1bc4-925b-4367-ed72-a2a56a9cf1a6"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the sentence:Emily taught us about Classes. 1) Review: Defining and calling functions and 2) ​Changing attributes after defining classes.\n",
+            "3m1ly t4u9ht u5 480ut Cl45535. 1) R3v13w: D371n1n9 4nd c4ll1n9 7unct10n5 4nd 2) ​Ch4n91n9 4ttr18ut35 47t3r d371n1n9 cl45535.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
